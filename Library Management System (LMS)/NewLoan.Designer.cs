@@ -42,7 +42,7 @@ partial class NewLoan
             // txtName
             // 
             this.txtName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.txtName.BorderRadius = 6;
+            this.txtName.BorderRadius = 10;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.DefaultText = "";
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -68,7 +68,7 @@ partial class NewLoan
             // txtMember
             // 
             this.txtMember.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.txtMember.BorderRadius = 6;
+            this.txtMember.BorderRadius = 10;
             this.txtMember.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMember.DefaultText = "";
             this.txtMember.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -114,7 +114,9 @@ partial class NewLoan
             // 
             // guna2dtpCheckout
             // 
+            this.guna2dtpCheckout.BorderRadius = 10;
             this.guna2dtpCheckout.Checked = true;
+            this.guna2dtpCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
             this.guna2dtpCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2dtpCheckout.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2dtpCheckout.Location = new System.Drawing.Point(120, 139);
@@ -151,6 +153,8 @@ partial class NewLoan
             // guna2cbStatus
             // 
             this.guna2cbStatus.BackColor = System.Drawing.Color.Transparent;
+            this.guna2cbStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.guna2cbStatus.BorderRadius = 10;
             this.guna2cbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2cbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));

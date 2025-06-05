@@ -1,5 +1,4 @@
 ﻿using Library_Management_System__LMS_;
-using LibraryDashboard;
 using MemberManagementApp;
 using MySql.Data.MySqlClient;
 using System;
@@ -84,13 +83,6 @@ namespace LoanManagement
         private void SortLoans()
         {
 
-        }
-
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-            new DashboardForm().Show();
-            this.Close();
         }
 
         private void guna2Button3_Click_1(object sender, EventArgs e)

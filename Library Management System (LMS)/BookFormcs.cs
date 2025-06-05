@@ -1,5 +1,4 @@
-﻿using LibraryDashboard;
-using LoanManagement;
+﻿using LoanManagement;
 using MemberManagementApp;
 using MySql.Data.MySqlClient;
 using System;
@@ -84,7 +83,7 @@ namespace Library_Management_System__LMS_
         private void btnAddBook_Click(object sender, EventArgs e)
         {
             AddBook addForm = new AddBook();
-            addForm.BookAdded += (s, args) => LoadBooks(); // 🔁 Refresh on event
+            addForm.BookAdded += (s, args) => LoadBooks(); 
             addForm.ShowDialog();
         }
 
@@ -108,12 +107,6 @@ namespace Library_Management_System__LMS_
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             new MemberManagementForm().Show();
-            this.Close();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            new DashboardForm().Show();
             this.Close();
         }
 
