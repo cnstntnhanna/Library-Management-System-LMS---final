@@ -34,7 +34,7 @@ public partial class NewLoan : Form
             return;
         }
 
-        string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=librarydb;Integrated Security=True";
+        string connectionString = "Server=localhost;Database=librarydb;Uid=root;Pwd=;";
 
         string query = "INSERT INTO loans (Book, MemberID, CheckoutDate, Status) VALUES (@Book, @MemberID, @CheckoutDate, @Status)";
 

@@ -10,7 +10,7 @@ namespace LoanManagement
 {
     public partial class Loan : Form
     {
-        private string connectionString = "Server=127.0.0.1;Database=librarydb;Uid=root;Pwd=;";
+        private string connectionString = "Server=localhost;Database=librarydb;Uid=root;Pwd=;";
 
         public Loan()
         {
