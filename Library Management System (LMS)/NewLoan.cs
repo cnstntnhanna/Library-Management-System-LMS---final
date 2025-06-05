@@ -4,6 +4,8 @@ using System.Windows.Forms;
 
 public partial class NewLoan : Form
 {
+    // Define event
+    public event EventHandler LoanSaved;
     public NewLoan()
     {
         InitializeComponent();
@@ -55,6 +57,10 @@ public partial class NewLoan : Form
                 }
 
                 MessageBox.Show("Loan scheduled successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Raise event to notify parent
+                LoanSaved?.Invoke(this, EventArgs.Empty);
+
+                this.Close(); // Close modal
             }
         }
         catch (Exception ex)

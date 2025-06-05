@@ -44,8 +44,16 @@ namespace LoanManagement
 
         private void BtnNewLoan_Click(object sender, EventArgs e)
         {
-            NewLoan newLoan = new NewLoan();
-            newLoan.ShowDialog();
+            NewLoan newLoanForm = new NewLoan();
+
+            // Subscribe to LoanSaved event
+            newLoanForm.LoanSaved += (s, args) =>
+            {
+                // Refresh logic
+                guna2Button4.PerformClick(); // Or whatever logic you'd like
+            };
+
+            newLoanForm.ShowDialog();
         }
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
