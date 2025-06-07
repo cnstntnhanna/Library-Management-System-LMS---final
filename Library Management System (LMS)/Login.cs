@@ -1,6 +1,7 @@
-﻿using System;
+﻿using LibraryDashboard;
+using MemberManagementApp;
+using System;
 using System.Windows.Forms;
-using LibraryDashboard;
 
 namespace Library_Management_System__LMS_
 {
@@ -65,8 +66,9 @@ namespace Library_Management_System__LMS_
             {
                 lblError.Visible = false;
 
-                DashboardForm librarianDashboard = new DashboardForm();
-                librarianDashboard.Show();
+                // Show MemberManagementForm instead of DashboardForm
+                MemberManagementForm memberForm = new MemberManagementForm();
+                memberForm.Show();
                 this.Hide();
             }
             else if (userType == "Admin" && username == "Admin" && password == "adminpass")
