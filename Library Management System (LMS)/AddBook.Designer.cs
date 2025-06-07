@@ -72,12 +72,12 @@
             this.txtCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCategory.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCategory.Location = new System.Drawing.Point(124, 202);
+            this.txtCategory.Location = new System.Drawing.Point(136, 202);
             this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.PlaceholderText = "";
             this.txtCategory.SelectedText = "";
-            this.txtCategory.Size = new System.Drawing.Size(257, 32);
+            this.txtCategory.Size = new System.Drawing.Size(245, 32);
             this.txtCategory.TabIndex = 21;
             // 
             // txtAuthor
@@ -93,12 +93,12 @@
             this.txtAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAuthor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAuthor.Location = new System.Drawing.Point(124, 145);
+            this.txtAuthor.Location = new System.Drawing.Point(136, 145);
             this.txtAuthor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.PlaceholderText = "";
             this.txtAuthor.SelectedText = "";
-            this.txtAuthor.Size = new System.Drawing.Size(257, 34);
+            this.txtAuthor.Size = new System.Drawing.Size(245, 34);
             this.txtAuthor.TabIndex = 20;
             // 
             // txtTitle
@@ -114,12 +114,12 @@
             this.txtTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTitle.Location = new System.Drawing.Point(124, 89);
+            this.txtTitle.Location = new System.Drawing.Point(136, 89);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PlaceholderText = "";
             this.txtTitle.SelectedText = "";
-            this.txtTitle.Size = new System.Drawing.Size(256, 34);
+            this.txtTitle.Size = new System.Drawing.Size(244, 34);
             this.txtTitle.TabIndex = 19;
             this.txtTitle.TextChanged += new System.EventHandler(this.guna2TxtName_TextChanged);
             // 
@@ -150,7 +150,7 @@
             this.lblContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.lblContact.Location = new System.Drawing.Point(15, 202);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(103, 32);
+            this.lblContact.Size = new System.Drawing.Size(115, 32);
             this.lblContact.TabIndex = 16;
             this.lblContact.Text = "Category:";
             // 

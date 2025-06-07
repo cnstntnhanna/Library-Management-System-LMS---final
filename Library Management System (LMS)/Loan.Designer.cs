@@ -22,13 +22,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnNewLoan = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cmbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbSortBy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvLoans = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +45,7 @@
             this.btnNewLoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
             this.btnNewLoan.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(201)))), ((int)(((byte)(190)))));
             this.btnNewLoan.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.btnNewLoan.Location = new System.Drawing.Point(654, 79);
+            this.btnNewLoan.Location = new System.Drawing.Point(276, 70);
             this.btnNewLoan.Name = "btnNewLoan";
             this.btnNewLoan.Size = new System.Drawing.Size(120, 36);
             this.btnNewLoan.TabIndex = 0;
@@ -61,7 +59,7 @@
             this.txtSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.txtSearch.Location = new System.Drawing.Point(20, 79);
+            this.txtSearch.Location = new System.Drawing.Point(20, 70);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
@@ -71,82 +69,39 @@
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
             // 
-            // cmbStatus
-            // 
-            this.cmbStatus.BackColor = System.Drawing.Color.Transparent;
-            this.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.cmbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.cmbStatus.ItemHeight = 30;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "All Status",
-            "Active",
-            "Overdue",
-            "Returned"});
-            this.cmbStatus.Location = new System.Drawing.Point(305, 79);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(150, 36);
-            this.cmbStatus.StartIndex = 0;
-            this.cmbStatus.TabIndex = 2;
-            this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.CmbStatus_SelectedIndexChanged);
-            // 
-            // cmbSortBy
-            // 
-            this.cmbSortBy.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSortBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSortBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSortBy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.cmbSortBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.cmbSortBy.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSortBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.cmbSortBy.ItemHeight = 30;
-            this.cmbSortBy.Items.AddRange(new object[] {
-            "Newest First",
-            "Oldest First",
-            "Due Date"});
-            this.cmbSortBy.Location = new System.Drawing.Point(477, 79);
-            this.cmbSortBy.Name = "cmbSortBy";
-            this.cmbSortBy.Size = new System.Drawing.Size(150, 36);
-            this.cmbSortBy.StartIndex = 0;
-            this.cmbSortBy.TabIndex = 3;
-            this.cmbSortBy.SelectedIndexChanged += new System.EventHandler(this.CmbSortBy_SelectedIndexChanged);
-            // 
             // dgvLoans
             // 
             this.dgvLoans.AllowUserToAddRows = false;
             this.dgvLoans.AllowUserToDeleteRows = false;
             this.dgvLoans.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvLoans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvLoans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvLoans.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(201)))), ((int)(((byte)(190)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            this.dgvLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(201)))), ((int)(((byte)(190)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
+            this.dgvLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLoans.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLoans.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(236)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLoans.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvLoans.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvLoans.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvLoans.Location = new System.Drawing.Point(0, 180);
+            this.dgvLoans.Location = new System.Drawing.Point(0, 122);
             this.dgvLoans.Name = "dgvLoans";
             this.dgvLoans.ReadOnly = true;
             this.dgvLoans.RowHeadersVisible = false;
             this.dgvLoans.RowHeadersWidth = 51;
             this.dgvLoans.RowTemplate.Height = 40;
-            this.dgvLoans.Size = new System.Drawing.Size(800, 320);
+            this.dgvLoans.Size = new System.Drawing.Size(800, 378);
             this.dgvLoans.TabIndex = 4;
             this.dgvLoans.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvLoans.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -250,8 +205,6 @@
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.dgvLoans);
-            this.Controls.Add(this.cmbSortBy);
-            this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnNewLoan);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -271,8 +224,6 @@
 
         private Guna.UI2.WinForms.Guna2Button btnNewLoan;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSortBy;
         private Guna.UI2.WinForms.Guna2DataGridView dgvLoans;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Panel panelHeader;

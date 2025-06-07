@@ -45,11 +45,9 @@ namespace LoanManagement
         {
             NewLoan newLoanForm = new NewLoan();
 
-            // Subscribe to LoanSaved event
             newLoanForm.LoanSaved += (s, args) =>
             {
-                // Refresh logic
-                guna2Button4.PerformClick(); // Or whatever logic you'd like
+                guna2Button4.PerformClick();
             };
 
             newLoanForm.ShowDialog();
